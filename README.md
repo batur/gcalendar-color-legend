@@ -43,7 +43,7 @@ A Chrome extension that adds a collapsible color legend panel to Google Calendar
 1. **Expand/Collapse**: Click on the "Color Legend" header to toggle the panel
 2. **Add Custom Names**: Click on any text field and type your custom label
 3. **Auto-Save**: Changes are saved automatically when you click away or press Enter
-4. **Persistent**: Your labels are saved locally and persist across browser restarts
+4. **Persistent**: Your labels are saved locally and persist browser restarts
 
 ## File Structure
 

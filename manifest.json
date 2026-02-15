@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Calendar Color Legend",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Add custom names to Google Calendar event colors as a personal legend/index",
   "permissions": ["storage"],
   "host_permissions": ["https://calendar.google.com/*"],

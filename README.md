@@ -7,7 +7,7 @@ A Chrome extension that adds a collapsible color legend panel to Google Calendar
 
 ## Features
 
-- 🎨 **Custom Color Names**: Assign personal labels to all 12 Google Calendar event colors
+- 🎨 **Custom Color Names**: Assign personal labels to all 11 Google Calendar event colors
 - 📁 **Collapsible Panel**: Clean, space-saving UI that integrates with Google Calendar's sidebar
 - 💾 **Persistent Storage**: Your custom names are saved and synced across devices
 - 🎯 ** Domain-Specific**: Only activates on Google Calendar

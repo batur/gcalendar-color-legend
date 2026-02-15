@@ -15,19 +15,7 @@ A Chrome extension that adds a collapsible color legend panel to Google Calendar
 
 ## Screenshot
 
-```
-┌─────────────────────────┐
-│ ▼ Color Legend          │
-├─────────────────────────┤
-│ 🔴 Work Meetings        │
-│ 🟠 Personal Tasks       │
-│ 🟡 Deadlines            │
-│ 🟢 Health & Fitness     │
-│ 🔵 Learning             │
-│ 🟣 Social Events        │
-│ ...                     │
-└─────────────────────────┘
-```
+![Screenshot of the Color Legend Panel in Google Calendar](./assets/Screenshot%202026-02-16%20at%2001.28.34.png)
 
 ## Installation
 

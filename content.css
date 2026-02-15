@@ -1,0 +1,296 @@
+/**
+ * Calendar Color Legend Extension Styles
+ * Designed to match Google Calendar's Material Design aesthetic
+ */
+
+/* Panel Container */
+.ccl-panel {
+  margin: 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  transition: box-shadow 0.2s ease;
+}
+
+.ccl-panel:hover {
+  box-shadow:
+    0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* Header */
+.ccl-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
+}
+
+.ccl-header:hover {
+  background-color: #e8f0fe;
+}
+
+.ccl-toggle-icon {
+  font-size: 10px;
+  margin-right: 8px;
+  color: #5f6368;
+  transition: transform 0.2s ease;
+}
+
+.ccl-title {
+  font-weight: 500;
+  color: #202124;
+  letter-spacing: 0.1px;
+  flex: 1;
+}
+
+/* Restore Button */
+.ccl-restore-btn {
+  background: none;
+  border: none;
+  color: #5f6368;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+  line-height: 1;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.ccl-restore-btn:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+  color: #202124;
+}
+
+/* Content Area */
+.ccl-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding-bottom: 8px;
+  transition:
+    max-height 0.3s ease,
+    padding 0.3s ease,
+    opacity 0.3s ease;
+}
+
+/* Collapsed State */
+.ccl-panel.ccl-collapsed .ccl-content {
+  max-height: 0;
+  padding: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.ccl-panel.ccl-collapsed .ccl-header {
+  border-bottom: none;
+}
+
+/* Color Row */
+.ccl-color-row {
+  display: flex;
+  align-items: center;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.15s ease;
+}
+
+/* Saved Indicator */
+.ccl-saved-indicator {
+  position: absolute;
+  right: 12px;
+  font-size: 11px;
+  color: #33b679;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.ccl-saved-indicator.ccl-show {
+  opacity: 1;
+}
+.ccl-color-row.ccl-last-row {
+  border-bottom: none;
+  margin-bottom: 6px;
+}
+
+.ccl-color-row:hover {
+  background-color: #f1f3f4;
+}
+
+/* Color Dot */
+.ccl-color-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-right: 12px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Field */
+.ccl-color-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 13px;
+  color: #202124;
+  padding: 6px 8px;
+  border-radius: 4px;
+  outline: none;
+  transition:
+    background-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.ccl-color-input::placeholder {
+  color: #9aa0a6;
+  font-style: italic;
+}
+
+.ccl-color-input:hover {
+  background-color: #e8eaed;
+}
+
+.ccl-color-input:focus {
+  background-color: #fff;
+  box-shadow: 0 0 0 2px #1a73e8;
+}
+
+/* Scrollbar Styling */
+.ccl-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ccl-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ccl-content::-webkit-scrollbar-thumb {
+  background-color: #dadce0;
+  border-radius: 4px;
+}
+
+.ccl-content::-webkit-scrollbar-thumb:hover {
+  background-color: #bdc1c6;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .ccl-panel {
+    background-color: #292a2d;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .ccl-header {
+    background-color: #35363a;
+    border-bottom-color: #3c4043;
+  }
+
+  .ccl-header:hover {
+    background-color: #3c4043;
+  }
+
+  .ccl-toggle-icon {
+    color: #9aa0a6;
+  }
+
+  .ccl-title {
+    color: #e8eaed;
+  }
+
+  .ccl-color-row:hover {
+    background-color: #35363a;
+  }
+
+  .ccl-color-input {
+    color: #e8eaed;
+  }
+
+  .ccl-color-input::placeholder {
+    color: #9aa0a6;
+  }
+
+  .ccl-color-input:hover {
+    background-color: #3c4043;
+  }
+
+  .ccl-color-input:focus {
+    background-color: #202124;
+    box-shadow: 0 0 0 2px #8ab4f8;
+  }
+
+  .ccl-restore-btn {
+    color: #9aa0a6;
+  }
+
+  .ccl-restore-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #e8eaed;
+  }
+
+  .ccl-saved-indicator {
+    color: #81c995;
+  }
+
+  .ccl-content::-webkit-scrollbar-thumb {
+    background-color: #5f6368;
+  }
+
+  .ccl-content::-webkit-scrollbar-thumb:hover {
+    background-color: #80868b;
+  }
+}
+
+/* Google Calendar Dark Mode Override */
+/* Google Calendar has its own dark mode that may not use prefers-color-scheme */
+html[data-darkreader-scheme="dark"] .ccl-panel,
+body[style*="background-color: rgb(32, 33, 36)"] .ccl-panel {
+  background-color: #292a2d;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+html[data-darkreader-scheme="dark"] .ccl-header,
+body[style*="background-color: rgb(32, 33, 36)"] .ccl-header {
+  background-color: #35363a;
+  border-bottom-color: #3c4043;
+}
+
+html[data-darkreader-scheme="dark"] .ccl-title,
+body[style*="background-color: rgb(32, 33, 36)"] .ccl-title {
+  color: #e8eaed;
+}
+
+html[data-darkreader-scheme="dark"] .ccl-color-input,
+body[style*="background-color: rgb(32, 33, 36)"] .ccl-color-input {
+  color: #e8eaed;
+}
+
+html[data-darkreader-scheme="dark"] .ccl-restore-btn,
+body[style*="background-color: rgb(32, 33, 36)"] .ccl-restore-btn {
+  color: #9aa0a6;
+}
+
+html[data-darkreader-scheme="dark"] .ccl-restore-btn:hover,
+body[style*="background-color: rgb(32, 33, 36)"] .ccl-restore-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #e8eaed;
+}
+
+html[data-darkreader-scheme="dark"] .ccl-saved-indicator,
+body[style*="background-color: rgb(32, 33, 36)"] .ccl-saved-indicator {
+  color: #81c995;
+}

@@ -45,23 +45,6 @@ A Chrome extension that adds a collapsible color legend panel to Google Calendar
 3. **Auto-Save**: Changes are saved automatically when you click away or press Enter
 4. **Persistent**: Your labels are saved locally and persist across browser restarts
 
-## Color Reference
-
-| Color | Default Name | Example Usage    |
-| ----- | ------------ | ---------------- |
-| 🔴    | Tomato       | Urgent/Important |
-| 🩷    | Flamingo     | Personal         |
-| 🟠    | Tangerine    | Work             |
-| 🟡    | Banana       | Deadlines        |
-| 🟢    | Sage         | Health           |
-| 💚    | Basil        | Finance          |
-| 🔵    | Peacock      | Learning         |
-| 💙    | Blueberry    | Projects         |
-| 💜    | Grape        | Social           |
-| 🟣    | Lavender     | Hobbies          |
-| ⚫    | Graphite     | Low Priority     |
-| 🔷    | Default      | General          |
-
 ## File Structure
 
 ```
